@@ -80,10 +80,10 @@ class Auth extends Component {
 		event.preventDefault();
 		this.setState({ loading: true });
 		let url =
-			'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCsTbphO6M8HRkymlak_xQRlyMsu9Ywd3o';
+			'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=';
 		if (this.state.isSignup) {
 			url =
-				'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCsTbphO6M8HRkymlak_xQRlyMsu9Ywd3o';
+				'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=';
 		}
 		const authData = {
 			email: this.state.controls.email.value,
